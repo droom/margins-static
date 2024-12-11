@@ -1,0 +1,91 @@
+
+@keyframes fadeUp {
+	0%{
+		opacity: 0;
+	}
+	10%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+
+
+@keyframes mastUp {
+	0%{
+		margin: 6px 10px 0 10px;
+	}
+
+	100%{
+		margin: -215px 10px 0 10px;
+	}
+}
+
+header.mast{
+	line-height: 0;
+	margin: 6px 10px 0 10px;
+	position: relative;
+}
+
+header.mast img.main{
+	opacity: 0;
+/*	opacity: 1;*/
+
+}
+
+header.mast img.segment{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+header.mast img.segment-a,
+header.mast img.segment-r,
+header.mast img.segment-g,
+header.mast img.segment-i,
+header.mast img.segment-n,
+header.mast img.segment-s{
+	opacity: 1;
+}
+
+body.index header.mast img.segment-m,
+body.index header.mast img.segment-a,
+body.index header.mast img.segment-r,
+body.index header.mast img.segment-g,
+body.index header.mast img.segment-i,
+body.index header.mast img.segment-n,
+body.index header.mast img.segment-s{
+	opacity: 1;
+}
+
+body.index header.mast img.segment-m{
+	animation: fadeUp 1200ms ease 0s 1 normal forwards;
+}
+body.index header.mast img.segment-a{
+	animation: fadeUp 1200ms ease 50ms 1 normal forwards;
+}
+body.index header.mast img.segment-r{
+	animation: fadeUp 1200ms ease 100ms 1 normal forwards;
+}
+body.index header.mast img.segment-g{
+	animation: fadeUp 1200ms ease 150ms 1 normal forwards;
+}
+body.index header.mast img.segment-i{
+	animation: fadeUp 1200ms ease 200ms 1 normal forwards;
+}
+body.index header.mast img.segment-n{
+	animation: fadeUp 1200ms ease 250ms 1 normal forwards;
+}
+body.index header.mast img.segment-s{
+	animation: fadeUp 1200ms ease 300ms 1 normal forwards;
+}
+
+
+
+
+body.case header.mast{
+	animation: mastUp 500ms ease 150ms 1 normal forwards;
+}

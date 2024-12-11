@@ -1,0 +1,57 @@
+
+@font-face {
+  font-family: 'GT-Light';
+  src: url('../fonts/GT-Pressura-Extended-Light-Trial.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'GT-Text';
+  src: url('../fonts/GT-Pressura-Extended-Text-Trial.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'GT-Regular';
+  src: url('../fonts/GT-Pressura-Extended-Regular-Trial.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'GT-Medium';
+  src: url('../fonts/GT-Pressura-Extended-Medium-Trial.woff2') format('woff2');
+}
+
+
+.registered{
+	font-family: arial;
+	font-size: 12px;
+	vertical-align: top;
+	margin-top: -2px;
+	margin-left: 2px;
+	display: inline-block;
+}
+
+
+.copyright{
+  text-transform: uppercase;
+}
+
+
+.caps{
+	text-transform: uppercase;
+}
+
+.project-title{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px 0 70px 0;
+  font-size: 40px;
+}
+
+.project-image{
+/*  padding: 0 20px;*/
+width: calc(75vw);
+margin: auto;
+
+}
+
+strong{
+  font-family: "GT-Medium", serif;
+  font-weight: normal;
+
+}
