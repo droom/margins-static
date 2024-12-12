@@ -14,15 +14,6 @@
 
 
 
-@keyframes mastUp {
-	0%{
-		margin: 6px 10px 0 10px;
-	}
-
-	100%{
-		margin: -215px 10px 0 10px;
-	}
-}
 
 header.mast{
 	line-height: 0;
@@ -84,8 +75,3 @@ body.index header.mast img.segment-s{
 }
 
 
-
-
-body.case header.mast{
-	animation: mastUp 500ms ease 150ms 1 normal forwards;
-}

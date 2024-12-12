@@ -1,7 +1,3 @@
-html{
-  scroll-behavior: smooth;
-}
-
 body{
   background: #ccc;
   font-family: 'GT-Text', 'GT-Regular', serif;
@@ -18,4 +14,9 @@ ol, ul, li{
 ol li{
   list-style: none;
   display: inline;
+}
+
+
+.project-image{
+  margin: 100px auto;
 }

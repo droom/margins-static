@@ -17,6 +17,10 @@
 }
 
 
+body{
+  font-family: 'GT-Text', 'GT-Regular', serif;
+}
+
 .registered{
 	font-family: arial;
 	font-size: 12px;
@@ -43,12 +47,6 @@
   font-size: 40px;
 }
 
-.project-image{
-/*  padding: 0 20px;*/
-width: calc(75vw);
-margin: auto;
-
-}
 
 strong{
   font-family: "GT-Medium", serif;

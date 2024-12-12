@@ -28,7 +28,7 @@
 }
 */
 
-.col-3-tile{
+.grid-main{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 
@@ -39,17 +39,15 @@
 
 }
 
-.col-3-tile div:hover{
+.grid-main div:hover{
 	background-color: white;
 }
 
-.col-3-tile div{
-	border-bottom: 1px solid black;
-	border-right: 1px solid black;
+.grid-main div{
 	position: relative;
 }
 
-.col-3-tile div label{
+.grid-main div label{
 	position: absolute;
 	top: 8px;
 	right: 8px;
@@ -61,23 +59,43 @@
 	border-radius: 3px;	
 }
 
+.grid-main .span-half{
+/*	grid-column-start: 3;*/
+/*	grid-column-end: 6;*/
+	grid-column: span 2;
 
-.col-3-tile div:nth-child(1),
-.col-3-tile div:nth-child(2),
-.col-3-tile div:nth-child(3),
-.col-3-tile div:nth-child(4)
+}
+
+.gap-20{
+	grid-gap: 20px;
+}
+
+:root {
+  --gridBorder: #aaa;
+}
+
+
+.grid-main div{
+	border-bottom: 1px solid var(--gridBorder);
+	border-right: 1px solid var(--gridBorder);
+}
+
+.grid-main div:nth-child(1),
+.grid-main div:nth-child(2),
+.grid-main div:nth-child(3),
+.grid-main div:nth-child(4)
 
 {
-	border-top: 1px solid black;
+	border-top: 1px solid var(--gridBorder);
 }
 
 
-.col-3-tile div:nth-child(4n + 1){
-	border-left: 1px solid black;
+.grid-main div:nth-child(4n + 1){
+	border-left: 1px solid var(--gridBorder);
 }
 
 
-.col-3-tile div h3{
+.grid-main div h3{
 	text-align: center;
 	letter-spacing: -0.03em;
 /*	margin-top: 10px;*/
@@ -87,19 +105,19 @@
 
 }
 
-.col-3-tile a{
+.grid-main a{
 	text-decoration: none;
 	color: black;
 }
 
-.col-3-tile div{
+.grid-main div{
 /*	background-color: yellow;*/
 	display: flex;
 	flex-direction: column;
 	align-self: center;
 }
 
-.col-3-tile div h3{
+.grid-main div h3{
 /*	background-color: yellow;*/
 	min-height: 80px;
 
