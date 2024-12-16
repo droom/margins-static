@@ -1,0 +1,56 @@
+ :root {
+     --gridBorder: 1px solid #fff;
+}
+
+ .grid-main {
+     border-top: var(--gridBorder);
+}
+ .grid-main .project{
+     border-bottom: var(--gridBorder);
+     border-right: var(--gridBorder);
+}
+
+
+.grid-main .project:nth-child(2n + 1),
+.grid-main .project:nth-child(3n + 1),
+.grid-main .project:nth-child(4n + 1){
+    border-left: none;
+}
+.grid-main .project:nth-child(5n + 1){
+    border-left: var(--gridBorder);
+}
+
+
+@media (max-width: 1200px) {
+ .grid-main .project:nth-child(2n + 1),
+ .grid-main .project:nth-child(3n + 1),
+ .grid-main .project:nth-child(5n + 1){
+        border-left: none;
+    }
+ .grid-main .project:nth-child(4n + 1){
+        border-left: var(--gridBorder);
+    }
+}
+
+@media (max-width: 900px) {
+ .grid-main .project:nth-child(2n + 1),
+ .grid-main .project:nth-child(4n + 1),
+ .grid-main .project:nth-child(5n + 1){
+        border-left: none
+    }
+ .grid-main .project:nth-child(3n + 1){
+        border-left: var(--gridBorder);
+    }
+}
+
+@media (max-width: 600px) {
+
+ .grid-main .project:nth-child(3n + 1),
+ .grid-main .project:nth-child(4n + 1),
+ .grid-main .project:nth-child(5n + 1){
+        border-left: none;
+    }
+ .grid-main .project:nth-child(2n + 1){
+        border-left: var(--gridBorder);
+    }
+}

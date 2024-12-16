@@ -1,4 +1,3 @@
-
 @keyframes fadeUp {
 	0%{
 		opacity: 0;
@@ -12,65 +11,60 @@
 	}
 }
 
-
-
-
-header.mast{
+footer.mast{
 	line-height: 0;
-	margin: 6px 10px 0 10px;
+	margin: 230px 15px 10px 15px;
 	position: relative;
 }
 
-header.mast img.main{
+footer.mast img.main{
 	opacity: 0;
-/*	opacity: 1;*/
-
 }
 
-header.mast img.segment{
+footer.mast img.segment{
 	position: absolute;
 	left: 0;
 	top: 0;
 }
 
-header.mast img.segment-a,
-header.mast img.segment-r,
-header.mast img.segment-g,
-header.mast img.segment-i,
-header.mast img.segment-n,
-header.mast img.segment-s{
+footer.mast img.segment-a,
+footer.mast img.segment-r,
+footer.mast img.segment-g,
+footer.mast img.segment-i,
+footer.mast img.segment-n,
+footer.mast img.segment-s{
 	opacity: 1;
 }
 
-body.index header.mast img.segment-m,
-body.index header.mast img.segment-a,
-body.index header.mast img.segment-r,
-body.index header.mast img.segment-g,
-body.index header.mast img.segment-i,
-body.index header.mast img.segment-n,
-body.index header.mast img.segment-s{
+body.index footer.mast img.segment-m,
+body.index footer.mast img.segment-a,
+body.index footer.mast img.segment-r,
+body.index footer.mast img.segment-g,
+body.index footer.mast img.segment-i,
+body.index footer.mast img.segment-n,
+body.index footer.mast img.segment-s{
 	opacity: 1;
 }
 
-body.index header.mast img.segment-m{
+body.index footer.mast img.segment-m{
 	animation: fadeUp 1200ms ease 0s 1 normal forwards;
 }
-body.index header.mast img.segment-a{
+body.index footer.mast img.segment-a{
 	animation: fadeUp 1200ms ease 50ms 1 normal forwards;
 }
-body.index header.mast img.segment-r{
+body.index footer.mast img.segment-r{
 	animation: fadeUp 1200ms ease 100ms 1 normal forwards;
 }
-body.index header.mast img.segment-g{
+body.index footer.mast img.segment-g{
 	animation: fadeUp 1200ms ease 150ms 1 normal forwards;
 }
-body.index header.mast img.segment-i{
+body.index footer.mast img.segment-i{
 	animation: fadeUp 1200ms ease 200ms 1 normal forwards;
 }
-body.index header.mast img.segment-n{
+body.index footer.mast img.segment-n{
 	animation: fadeUp 1200ms ease 250ms 1 normal forwards;
 }
-body.index header.mast img.segment-s{
+body.index footer.mast img.segment-s{
 	animation: fadeUp 1200ms ease 300ms 1 normal forwards;
 }
 

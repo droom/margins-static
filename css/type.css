@@ -1,55 +1,72 @@
-
 @font-face {
-  font-family: 'GT-Light';
-  src: url('../fonts/GT-Pressura-Extended-Light-Trial.woff2') format('woff2');
+     font-family: 'GT-Light';
+     src: url('../fonts/GT-Pressura-Extended-Light-Trial.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'GT-Text';
-  src: url('../fonts/GT-Pressura-Extended-Text-Trial.woff2') format('woff2');
+     font-family: 'GT-Text';
+     src: url('../fonts/GT-Pressura-Extended-Text-Trial.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'GT-Regular';
-  src: url('../fonts/GT-Pressura-Extended-Regular-Trial.woff2') format('woff2');
+     font-family: 'GT-Regular';
+     src: url('../fonts/GT-Pressura-Extended-Regular-Trial.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'GT-Medium';
-  src: url('../fonts/GT-Pressura-Extended-Medium-Trial.woff2') format('woff2');
+     font-family: 'GT-Medium';
+     src: url('../fonts/GT-Pressura-Extended-Medium-Trial.woff2') format('woff2');
 }
-
-
 body{
-  font-family: 'GT-Text', 'GT-Regular', serif;
+     font-family: 'GT-Text', 'GT-Regular', serif;
 }
 
+h1{
+     font-family: 'GT-Medium', serif;
+     font-size: 28px;
+     font-weight: 400;
+     letter-spacing: -0.02em;
+}
+button,
+h3{
+     font-family: 'GT-Text', 'GT-Regular', serif;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 17px;
+}
+
+p{
+     font-family: 'GT-Medium', serif;
+     font-weight: 400;
+     font-size: 16px;
+     letter-spacing: -0.03em;
+     line-height: 20px;
+}
+
+label{
+     font-size: 12px;
+}
 .registered{
-	font-family: arial;
-	font-size: 12px;
-	vertical-align: top;
-	margin-top: -2px;
-	margin-left: 2px;
-	display: inline-block;
+     display: inline-block;
+     font-family: arial;
+     font-size: 12px;
+     margin-top: 1px;
+     margin-left: 2px;
+     vertical-align: top;
 }
-
-
-.copyright{
-  text-transform: uppercase;
-}
-
-
 .caps{
-	text-transform: uppercase;
+     text-transform: uppercase;
+}
+.justify{
+     text-align: justify;
 }
 
-.project-title{
-  text-transform: uppercase;
-  text-align: center;
-  margin: 50px 0 70px 0;
-  font-size: 40px;
+.grid-main div h3{
+     text-align: center;
+}
+.nav a{
+     font-family: "GT-Regular", serif;
+     font-size: 14px;
 }
 
-
-strong{
-  font-family: "GT-Medium", serif;
-  font-weight: normal;
-
+a{
+     text-decoration: none;
+     color: black;
 }
