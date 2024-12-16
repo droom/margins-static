@@ -190,58 +190,19 @@ img {
   height: auto;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
 
-h2 {
+ol, ul, li {
   margin: 0;
   padding: 0;
 }
 
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
-h4 {
-  margin: 0;
-  padding: 0;
-}
-
-h5 {
-  margin: 0;
-  padding: 0;
-}
-
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-ol {
-  margin: 0;
-  padding: 0;
-}
 ol li {
   list-style: none;
   display: inline;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin: 0;
-  padding: 0;
 }
 
 .multiply {
@@ -275,13 +236,7 @@ h1 {
   letter-spacing: -0.02em;
 }
 
-button {
-  font-family: "GT-Text", "GT-Regular", serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-}
-
+button,
 h3 {
   font-family: "GT-Text", "GT-Regular", serif;
   font-weight: 400;
@@ -447,75 +402,6 @@ a {
   grid-gap: 40px;
 }
 
-.nav a {
-  border-radius: 20px;
-  border: 1px solid #aaa;
-  color: black;
-  padding: 5px 10px 3px 10px;
-}
-.nav a:hover {
-  background-color: #fff;
-}
-.nav .active a {
-  border-color: black;
-}
-
-button {
-  background: none;
-  display: block;
-  border: 0;
-}
-
-button.filter-btn:hover {
-  cursor: pointer;
-  color: blue;
-}
-
-button.programs-filter-btn-active {
-  color: red;
-  position: relative;
-  font-family: "GT-Regular", serif;
-}
-button.programs-filter-btn-active:before {
-  content: "—";
-  position: absolute;
-  left: -10px;
-  top: -1px;
-}
-
-a:hover {
-  color: blue;
-}
-
-table {
-  border: 2px solid black;
-  border-collapse: collapse;
-}
-
-th {
-  border: 1px solid;
-}
-
-td {
-  border: 1px solid;
-  padding: 5px;
-  vertical-align: top;
-  font-size: 13px;
-  line-height: 17px;
-}
-td:nth-child(1) {
-  width: 10%;
-}
-td:nth-child(3) {
-  width: 10%;
-}
-td:nth-child(2) {
-  width: 40%;
-}
-td:nth-child(4) {
-  width: 40%;
-}
-
 :root {
   --gridBorder: 1px solid #fff;
 }
@@ -568,4 +454,151 @@ td:nth-child(4) {
   .grid-main .project:nth-child(2n+1) {
     border-left: var(--gridBorder);
   }
+}
+.nav a {
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  color: black;
+  padding: 5px 10px 3px 10px;
+}
+
+.nav a:hover {
+  background-color: #fff;
+}
+
+.nav .active a {
+  border-color: black;
+}
+
+button {
+  background: none;
+  display: block;
+  border: 0;
+}
+
+button.filter-btn:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+button.programs-filter-btn-active {
+  color: red;
+  position: relative;
+  font-family: "GT-Regular", serif;
+}
+
+button.programs-filter-btn-active:before {
+  content: "—";
+  position: absolute;
+  left: -10px;
+  top: -1px;
+}
+
+a:hover {
+  color: blue;
+}
+
+table {
+  border: 2px solid black;
+}
+
+th, td {
+  border: 1px solid;
+}
+
+td {
+  padding: 5px;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 17px;
+  /*    width: 25%;*/
+}
+
+td:nth-child(1),
+td:nth-child(3) {
+  width: 10%;
+}
+
+td:nth-child(2),
+td:nth-child(4) {
+  width: 40%;
+  /*    background: green;*/
+}
+
+table {
+  border-collapse: collapse;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+footer.mast {
+  line-height: 0;
+  margin: 230px 15px 10px 15px;
+  position: relative;
+}
+
+footer.mast img.main {
+  opacity: 0;
+}
+
+footer.mast img.segment {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+footer.mast img.segment-a,
+footer.mast img.segment-r,
+footer.mast img.segment-g,
+footer.mast img.segment-i,
+footer.mast img.segment-n,
+footer.mast img.segment-s {
+  opacity: 1;
+}
+
+body.index footer.mast img.segment-m,
+body.index footer.mast img.segment-a,
+body.index footer.mast img.segment-r,
+body.index footer.mast img.segment-g,
+body.index footer.mast img.segment-i,
+body.index footer.mast img.segment-n,
+body.index footer.mast img.segment-s {
+  opacity: 1;
+}
+
+body.index footer.mast img.segment-m {
+  animation: fadeUp 1200ms ease 0s 1 normal forwards;
+}
+
+body.index footer.mast img.segment-a {
+  animation: fadeUp 1200ms ease 50ms 1 normal forwards;
+}
+
+body.index footer.mast img.segment-r {
+  animation: fadeUp 1200ms ease 100ms 1 normal forwards;
+}
+
+body.index footer.mast img.segment-g {
+  animation: fadeUp 1200ms ease 150ms 1 normal forwards;
+}
+
+body.index footer.mast img.segment-i {
+  animation: fadeUp 1200ms ease 200ms 1 normal forwards;
+}
+
+body.index footer.mast img.segment-n {
+  animation: fadeUp 1200ms ease 250ms 1 normal forwards;
+}
+
+body.index footer.mast img.segment-s {
+  animation: fadeUp 1200ms ease 300ms 1 normal forwards;
 }

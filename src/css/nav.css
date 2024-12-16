@@ -1,0 +1,41 @@
+.nav a{
+    border-radius: 20px;
+    border: 1px solid #aaa;
+    color: black;
+    padding: 5px 10px 3px 10px;
+}
+.nav a:hover{
+    background-color: #fff;
+}
+.nav .active a{
+    border-color: black;
+}
+
+button{
+    background: none;
+    display: block;
+    border: 0;
+}
+
+button.filter-btn:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+button.programs-filter-btn-active{
+    color: red;
+    position: relative;
+     font-family: 'GT-Regular', serif;
+
+}
+button.programs-filter-btn-active:before{
+    content: "—";
+    position: absolute;
+    left: -10px;
+    top: -1px;
+}
+
+a:hover{
+    color: blue;
+}
+
