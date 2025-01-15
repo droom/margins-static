@@ -1,6 +1,17 @@
 body{
   background: #fff;
+  background: #ccc;
+/*  background: url("../brand/bg.png");*/
+
 }
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 
 img{
   width: 100%;

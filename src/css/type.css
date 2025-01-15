@@ -60,6 +60,7 @@ label{
 
 .grid-main div h3{
      text-align: center;
+     text-transform: uppercase;
 }
 .nav a{
      font-family: "GT-Regular", serif;
